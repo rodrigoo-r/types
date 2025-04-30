@@ -12,7 +12,7 @@
 
 // Define NULL
 #ifndef NULL
-#define NULL (void *)0;
+#define NULL (void *)0
 #endif
 
 // Define size_t and ssize_t
