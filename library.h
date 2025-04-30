@@ -11,6 +11,28 @@
 #ifndef TYPES_LIBRARY_H
 #define TYPES_LIBRARY_H
 
-// Nothing interesting to see here
+// Define NULL
+#ifndef NULL
+#define NULL (void *)0
+#endif
+
+// Define size_t and ssize_t
+typedef unsigned long size_t;
+typedef long ssize_t;
+
+// uintptr/intptr
+typedef unsigned long uintptr_t;
+typedef long intptr_t;
+
+// Integer types
+typedef signed char int8_t;
+typedef short int16_t;
+typedef int int32_t;
+typedef long int64_t;
+typedef unsigned char uint8_t;
+typedef unsigned short uint16_t;
+typedef unsigned int uint32_t;
+typedef unsigned long uint64_t;
+
 
 #endif //TYPES_LIBRARY_H
