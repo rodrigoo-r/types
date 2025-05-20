@@ -11,6 +11,11 @@
 #ifndef TYPES_LIBRARY_H
 #define TYPES_LIBRARY_H
 
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
+
 // Define NULL
 #ifndef NULL
 #define NULL (void *)0
@@ -33,5 +38,9 @@ typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
 typedef unsigned int uint32_t;
 typedef unsigned long uint64_t;
+
+#if defined(__cplusplus)
+}
+#endif
 
 #endif //TYPES_LIBRARY_H
