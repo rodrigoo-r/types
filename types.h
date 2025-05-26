@@ -8,8 +8,8 @@
  * under certain conditions; type `show c' for details.
 */
 
-#ifndef TYPES_LIBRARY_H
-#define TYPES_LIBRARY_H
+#ifndef FLUENT_LIBC_TYPES_LIBRARY_H
+#define FLUENT_LIBC_TYPES_LIBRARY_H
 
 #if defined(__cplusplus)
 extern "C"
@@ -43,4 +43,4 @@ typedef unsigned long uint64_t;
 }
 #endif
 
-#endif //TYPES_LIBRARY_H
+#endif //FLUENT_LIBC_TYPES_LIBRARY_H
