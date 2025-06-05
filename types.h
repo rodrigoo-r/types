@@ -11,10 +11,9 @@
 #ifndef FLUENT_LIBC_TYPES_LIBRARY_H
 #define FLUENT_LIBC_TYPES_LIBRARY_H
 
-#if defined(__cplusplus)
-extern "C"
-{
-#endif
+// C++ includes these types in stdlib++
+// so we don't need to define them if we're compiling with C++
+#if !defined(__cplusplus)
 
 // Define NULL
 #ifndef NULL
@@ -39,8 +38,5 @@ typedef unsigned short uint16_t;
 typedef unsigned int uint32_t;
 typedef unsigned long uint64_t;
 
-#if defined(__cplusplus)
-}
-#endif
-
+#endif // __cplusplus
 #endif //FLUENT_LIBC_TYPES_LIBRARY_H
