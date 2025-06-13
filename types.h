@@ -18,6 +18,11 @@
 // Ignore if NULL is already defined (most likely implies that stddef.h or stdlib.h is included)
 // Some MinGW versions also set _SIZE_T_DEFINED, so we check for that as well
 #if !defined(NULL) && !defined(_STDDEF_H) && !_SIZE_T_DEFINED
+// Macros to avoid redefinition
+#define _SIZE_T_DEFINED 1
+#define __uintptr_t_defined 1
+#define __intptr_t_defined 1
+#define _SSIZE_T_DEFINED 1
 // Define NULL
 #define NULL (void *)0
 
