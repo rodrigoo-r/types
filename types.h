@@ -16,8 +16,8 @@
 #if !defined(__cplusplus)
 
 // Ignore if NULL is already defined (most likely implies that stddef.h or stdlib.h is included)
-
-#if !defined(NULL) && !defined(_STDDEF_H)
+// Some MinGW versions also set _SIZE_T_DEFINED, so we check for that as well
+#if !defined(NULL) && !defined(_STDDEF_H) && !_SIZE_T_DEFINED
 // Define NULL
 #define NULL (void *)0
 
